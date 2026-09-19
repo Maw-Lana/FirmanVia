@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road to Forever - Firman &amp; Via</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="invitation-locked">
+  <div class="loading-screen" id="loading-screen" role="status" aria-live="polite">
+    <img src="image/Amplop.png" alt="" class="loading-screen__image">
+    <p class="loading-screen__title">Firman &amp; Via</p>
+    <p class="loading-screen__text" id="loading-status">Menyiapkan undangan...</p>
+    <div class="loading-screen__track" aria-hidden="true">
+      <div class="loading-screen__progress" id="loading-progress"></div>
+    </div>
+    <span class="loading-screen__percent" id="loading-percent">0%</span>
+  </div>
+
+  <main class="invitation">
+    <section class="cover" id="cover" aria-label="Sampul undangan">
+      <p class="cover__subtitle">Road to Forever</p>
+
+      <h1 class="cover__names">
+        <span>Firman</span>
+        <span>&amp;</span>
+        <span>Via</span>
+      </h1>
+
+      <p class="cover__greeting">
+        <span>Teruntuk</span>
+        <span>(Sapaan) (Nama)</span>
+      </p>
+
+      <a class="cover__button" href="#home" id="open-invitation">Buka Undangan</a>
+    </section>
+
+    <div class="content-pages">
+      <section id="home" class="content-section" aria-labelledby="home-title">
+        <div class="content-section__header">
+          <h2 id="home-title">Tasyakuran Pernikahan</h2>
+          <img src="image/garis horizontal.png" alt="" class="content-section__horizontal">
+          <p class="content-section__subtitle">Dengan penuh rasa syukur, kami mengundang (Sapaan) (Nama), untuk hadir dalam hari bahagia kami.</p>
+        </div>
+        <div class="content-section__body home-content">
+          <div class="home-content__portrait">
+            <img src="image/garis vertikal.png" alt="" class="home-content__line">
+            <img src="image/firman.png" alt="Rifqi Firman Maulana" class="home-content__photo lightbox-image" data-lightbox-group="home">
+          </div>
+          <div class="home-content__person">
+            <h3>Rifqi Firman Maulana</h3>
+            <p>Putra dari Bapak Dadang S. dan Ibu Lies N.</p>
+          </div>
+          <img src="image/cincin.png" alt="" class="home-content__ring">
+          <div class="home-content__person">
+            <h3>Oktaviani Winarso</h3>
+            <p>Putri dari Bapak Teguh W. dan Ibu Kus</p>
+          </div>
+          <div class="home-content__portrait">
+            <img src="image/garis vertikal.png" alt="" class="home-content__line">
+            <img src="image/via.png" alt="Oktaviani Winarso" class="home-content__photo lightbox-image" data-lightbox-group="home">
+          </div>
+          <blockquote class="home-content__quote">
+            <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</p>
+            <small class="home-content__quote-source">(Ar-rum : 21)</small>
+          </blockquote>
+        </div>
+        <img src="image/garis bawah.png" alt="" class="content-section__bottom">
+      </section>
+
+      <section id="acara" class="content-section" aria-labelledby="acara-title">
+        <div class="content-section__header">
+          <h2 id="acara-title">Informasi Acara</h2>
+          <img src="image/garis horizontal.png" alt="" class="content-section__horizontal">
+          <p class="content-section__subtitle">Alamat : Dusun Pancuran RT/RW 03/08, Desa Plelen, Kecamatan Gringsing, Kabupaten Batang</p>
+        </div>
+        <div class="content-section__body event-content">
+          <div class="event-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9695.363942904145!2d110.01801678326488!3d-6.967822156328805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e704112561c0225%3A0x71e9467ed81a52a6!2sWarung%20Pojok%20Mbak%20Ani!5e0!3m2!1sid!2sid!4v1788621754434!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              title="Peta lokasi acara"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <a class="event-map-button" href="https://maps.app.goo.gl/yoYePH395FzVfHXAA" target="_blank" rel="noopener noreferrer">Buka Peta</a>
+          <div class="event-schedule">
+            <article class="event-card">
+              <h3>Akad Nikah</h3>
+              <p>09:00 - selesai</p>
+              <p>Minggu, 18 Oktober 2026</p>
+              <hr>
+              <small>Hanya dihadiri keluarga</small>
+            </article>
+            <article class="event-card">
+              <h3>Tasyakuran</h3>
+              <p>10:00 - 12:00<br>14:00 - 17:00</p>
+              <p>Minggu, 18 Oktober 2026</p>
+            </article>
+          </div>
+          <div class="countdown" aria-live="polite">
+            <p class="countdown__label">Menuju Hari Bahagia</p>
+            <div class="countdown__grid">
+              <div class="countdown__item">
+                <span class="countdown__value" id="countdown-days">00</span>
+                <span class="countdown__unit">Hari</span>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__value" id="countdown-hours">00</span>
+                <span class="countdown__unit">Jam</span>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__value" id="countdown-minutes">00</span>
+                <span class="countdown__unit">Menit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="image/garis bawah.png" alt="" class="content-section__bottom">
+      </section>
+
+      <section id="kisah" class="content-section" aria-labelledby="kisah-title">
+        <div class="content-section__header">
+          <h2 id="kisah-title">Kilas Balik</h2>
+          <img src="image/garis horizontal.png" alt="" class="content-section__horizontal">
+          <p class="content-section__subtitle">Bagaimana cinta kami bersemi?</p>
+        </div>
+        <div class="content-section__body story-content">
+          <article class="story-item">
+            <img src="image/kilas balik/kilas balik 1.jpeg" alt="Pertemuan kecil di Kota Gudeg" class="story-item__photo lightbox-image" data-lightbox-group="kisah">
+            <div class="story-item__card">
+              <h3>Pertemuan kecil di Kota Gudeg</h3>
+              <time datetime="2022-02">Februari 2022</time>
+              <p>Kami bertemu di Yogyakarta semasa menempuh bangku perkuliahan. Sapaan singkat berubah menjadi percakapan panjang. Setiap pesan seolah menjadi benang halus yang menenun kedekatan kami. Pada akhirnya, kehadiran satu sama lain menjadi hal yang paling dinanti setiap hari.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <img src="image/kilas balik/kilas balik 2.jpeg" alt="Terpisah oleh JOG" class="story-item__photo lightbox-image" data-lightbox-group="kisah">
+            <div class="story-item__card">
+              <h3>Terpisah oleh JOG</h3>
+              <time datetime="2024-03">Maret 2024</time>
+              <p>Yogyakarta mengantar perpisahan sementara kami. Firman melangkah ke Jakarta mengejar mimpi yang telah lama ditata, sementara Yogyakarta tetap menjaga kenangan berdua. Jarak yang membentang tak memutus apa yang telah tumbuh, hanya mengubah pertemuan yang dekat menjadi rindu yang dijaga dari jauh.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <img src="image/kilas balik/kilas balik 3.jpeg" alt="Akhirnya di Jakarta" class="story-item__photo lightbox-image" data-lightbox-group="kisah">
+            <div class="story-item__card">
+              <h3>Akhirnya di Jakarta</h3>
+              <time datetime="2024-07">Juli 2024</time>
+              <p>Kota yang semula hanya menjadi tempat Firman mengejar mimpi, kini turut menyimpan babak baru kebersamaan kami. Rindu yang selama ini dijaga dari jauh, berlabuh menjadi pertemuan yang dinanti.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <img src="image/kilas balik/kilas balik 4.jpeg" alt="Lamaran" class="story-item__photo lightbox-image" data-lightbox-group="kisah">
+            <div class="story-item__card">
+              <h3>Lamaran</h3>
+              <time datetime="2026-08-02">2 Agustus 2026</time>
+              <p>Setelah melalui perjalanan panjang, kami memutuskan untuk melangkah ke jenjang yang lebih serius. Yogyakarta yang mempertemukan, Jakarta yang menyatukan, kini bermuara pada satu keputusan: melangkah bersama menuju babak baru.</p>
+            </div>
+          </article>
+        </div>
+        <img src="image/garis bawah.png" alt="" class="content-section__bottom">
+      </section>
+
+      <section id="album" class="content-section" aria-labelledby="album-title">
+        <div class="content-section__header">
+          <h2 id="album-title">Album</h2>
+          <img src="image/garis horizontal.png" alt="" class="content-section__horizontal">
+          <p class="content-section__subtitle">Momen bahagia kami</p>
+        </div>
+        <div class="content-section__body album-content">
+          <p class="album-content__caption">Setiap momen itu berharga, asalkan isinya kami berdua, eaa &lt;3</p>
+          <div class="album-grid">
+            <img src="image/album/5.jpeg" alt="Album 5" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/1.png" alt="Album 1" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/7.jpeg" alt="Album 7" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/3.jpeg" alt="Album 3" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/8.jpeg" alt="Album 8" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/2.jpg" alt="Album 2" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/6.jpeg" alt="Album 6" class="album-grid__image lightbox-image" data-lightbox-group="album">
+            <img src="image/album/4.jpeg" alt="Album 4" class="album-grid__image lightbox-image" data-lightbox-group="album">
+          </div>
+        </div>
+        <img src="image/garis bawah.png" alt="" class="content-section__bottom">
+      </section>
+
+      <section id="kehadiran" class="content-section" aria-labelledby="kehadiran-title">
+        <div class="content-section__header">
+          <h2 id="kehadiran-title">Kehadiran</h2>
+          <img src="image/garis horizontal.png" alt="" class="content-section__horizontal">
+          <p class="content-section__subtitle attendance-subtitle">Konfirmasi kehadiran dengan mengisi<br>form di bawah ini ya!</p>
+        </div>
+        <div class="content-section__body attendance-content">
+          <form class="attendance-form" id="attendance-form">
+            <label for="guest-name">Nama</label>
+            <input id="guest-name" name="nama" type="text" required autocomplete="name">
+
+            <label for="guest-count">Jumlah</label>
+            <input id="guest-count" name="jumlah" type="number" min="1" max="10" step="1" required inputmode="numeric">
+
+            <label for="guest-confirmation">Konfirmasi</label>
+            <select id="guest-confirmation" name="konfirmasi" required>
+              <option value="" selected disabled>Pilih konfirmasi</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+              <option value="Belum Pasti">Belum Pasti</option>
+            </select>
+
+            <button type="submit">Kirim</button>
+          </form>
+
+          <p class="attendance-message">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila (Sapaan) (Nama) berkenan hadir untuk memberikan doa. Atas kehadiran serta doanya, kami ucapkan terima kasih.</p>
+        </div>
+      </section>
+
+      <footer class="invitation-footer">
+        Undangan Pernikahan Firman &amp; Via developed by Firman M. and Oktaviani W.
+      </footer>
+    </div>
+  </main>
+
+  <audio id="invitation-audio" loop preload="auto">
+    <source src="audio/Musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="audio-control" id="audio-control" type="button" aria-label="Putar musik" hidden>
+    <span class="audio-control__icon audio-control__icon--disc" aria-hidden="true"></span>
+  </button>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan foto" hidden>
+    <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Tutup">&times;</button>
+    <button class="lightbox__previous" id="lightbox-previous" type="button" aria-label="Foto sebelumnya">&#10094;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__image" id="lightbox-image" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__next" id="lightbox-next" type="button" aria-label="Foto berikutnya">&#10095;</button>
+  </div>
+
+  <div class="form-notification" id="form-notification" role="alert" aria-live="polite" hidden>
+    <div class="form-notification__box">
+      <button type="button" class="form-notification__close" aria-label="Tutup pemberitahuan">&times;</button>
+      <p class="form-notification__text"></p>
+    </div>
+  </div>
+
+  <script>
+    const loadingScreen = document.querySelector("#loading-screen");
+    const loadingStatus = document.querySelector("#loading-status");
+    const loadingProgress = document.querySelector("#loading-progress");
+    const loadingPercent = document.querySelector("#loading-percent");
+    const invitationAudio = document.querySelector("#invitation-audio");
+    const audioControl = document.querySelector("#audio-control");
+    const audioIcon = audioControl.querySelector(".audio-control__icon");
+    const attendanceForm = document.querySelector("#attendance-form");
+    const cover = document.querySelector("#cover");
+    const openInvitation = document.querySelector("#open-invitation");
+    const notification = document.querySelector("#form-notification");
+    const notificationText = notification.querySelector(".form-notification__text");
+    const invitationParams = new URLSearchParams(window.location.search);
+    const greetingByIndex = {
+      "1": "Bapak",
+      "2": "Ibu",
+      "3": "Keluarga",
+      "4": "Saudara",
+      "5": "Saudari"
+    };
+    const decodeGuestName = (value) => value.replace(/[A-Za-z]/g, (character) => {
+      const base = character >= "a" && character <= "z" ? 97 : 65;
+      return String.fromCharCode((character.charCodeAt(0) - base + 25) % 26 + base);
+    });
+    const greetingIndex = invitationParams.get("p");
+    const legacyGreeting = invitationParams.get("sapaan");
+    const encodedName = invitationParams.get("n");
+    const legacyName = invitationParams.get("namaTamu");
+    const recipientName = encodedName
+      ? decodeGuestName(encodedName)
+      : legacyName || "(Nama)";
+    const recipientGreeting = greetingIndex === "6"
+      ? ""
+      : greetingByIndex[greetingIndex] || legacyGreeting || "(Sapaan)";
+    const recipient = `${recipientGreeting} ${recipientName}`.trim();
+
+    document.querySelector(".cover__greeting span:last-child").textContent = recipient;
+    document.querySelector("#home .content-section__subtitle").textContent =
+      `Dengan penuh rasa syukur, kami mengundang ${recipient}, untuk hadir dalam hari bahagia kami.`;
+    document.querySelector(".attendance-message").textContent =
+      `Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila ${recipient} berkenan hadir untuk memberikan doa. Atas kehadiran serta doanya, kami ucapkan terima kasih.`;
+    document.querySelector("#guest-name").value = encodedName ? decodeGuestName(encodedName) : legacyName || "";
+
+    const waitForImage = (src) => new Promise((resolve) => {
+      const image = new Image();
+      image.addEventListener("load", () => resolve(true), { once: true });
+      image.addEventListener("error", () => resolve(false), { once: true });
+      image.src = src;
+    });
+
+    const requiredAssets = [
+      "image/bg-awal.png",
+      "image/bg.jpg",
+      "image/garis horizontal.png",
+      "image/garis bawah.png",
+      "image/garis vertikal.png",
+      "image/firman.png",
+      "image/via.png",
+      "image/cincin.png",
+      "image/kilas balik/kilas balik 1.jpeg",
+      "image/kilas balik/kilas balik 2.jpeg",
+      "image/kilas balik/kilas balik 3.jpeg",
+      "image/kilas balik/kilas balik 4.jpeg",
+      "image/album/1.png",
+      "image/album/2.jpg",
+      "image/album/3.jpeg",
+      "image/album/4.jpeg",
+      "image/album/5.jpeg",
+      "image/album/6.jpeg",
+      "image/album/7.jpeg",
+      "image/album/8.jpeg"
+    ];
+
+    const totalAssets = requiredAssets.length + 2;
+    let loadedAssets = 0;
+    const markAssetLoaded = (loaded) => {
+      loadedAssets += 1;
+      const percent = Math.min(100, Math.round((loadedAssets / totalAssets) * 100));
+      loadingProgress.style.width = `${percent}%`;
+      loadingPercent.textContent = `${percent}%`;
+      return loaded;
+    };
+
+    const waitForAudio = new Promise((resolve) => {
+      let settled = false;
+      const handleReady = () => finish(true);
+      const handleError = () => finish(false);
+      const finish = (loaded) => {
+        if (settled) {
+          return;
+        }
+        settled = true;
+        invitationAudio.removeEventListener("canplaythrough", handleReady);
+        invitationAudio.removeEventListener("error", handleError);
+        resolve(markAssetLoaded(loaded));
+      };
+      invitationAudio.addEventListener("canplaythrough", handleReady, { once: true });
+      invitationAudio.addEventListener("error", handleError, { once: true });
+      invitationAudio.load();
+      window.setTimeout(() => finish(invitationAudio.readyState > 0), 5000);
+    });
+
+    const waitForAssets = async () => {
+      const assetResults = await Promise.all([
+        ...requiredAssets.map((asset) => waitForImage(asset).then(markAssetLoaded)),
+        document.fonts.ready.then(() => markAssetLoaded(true)),
+        waitForAudio
+      ]);
+      loadingStatus.textContent = assetResults.every(Boolean)
+        ? "Undangan siap dibuka"
+        : "Sebagian aset gagal dimuat";
+      document.body.classList.add("assets-ready");
+      loadingScreen.hidden = true;
+    };
+
+    waitForAssets().catch(() => {
+      loadingStatus.textContent = "Sebagian aset gagal dimuat";
+      document.body.classList.add("assets-ready");
+      loadingScreen.hidden = true;
+    });
+
+    const animatedElements = document.querySelectorAll(
+      ".content-section__header, .home-content__portrait, .home-content__person, " +
+      ".home-content__ring, .home-content__quote, .event-map, .event-map-button, .event-card, " +
+      ".countdown, .album-content__caption, .album-grid__image, " +
+      ".story-item__photo, .story-item__card, .attendance-form, .attendance-message, " +
+      ".content-section__bottom, .invitation-footer"
+    );
+
+    animatedElements.forEach((element) => {
+      element.classList.add("animate-on-scroll");
+    });
+
+    const animationObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("is-visible", entry.isIntersecting);
+      });
+    }, {
+      threshold: 0.12
+    });
+
+    animatedElements.forEach((element) => animationObserver.observe(element));
+
+    window.scrollTo({ top: 0, behavior: "auto" });
+    openInvitation.addEventListener("click", (event) => {
+      event.preventDefault();
+      document.body.classList.remove("invitation-locked");
+      document.body.style.height = "";
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "auto";
+      history.replaceState(null, "", "#home");
+      cover.classList.add("cover--closing");
+      audioControl.hidden = false;
+      invitationAudio.play().then(() => {
+        audioIcon.classList.add("audio-control__icon--disc");
+        audioIcon.classList.remove("audio-control__icon--pause");
+        audioControl.setAttribute("aria-label", "Jeda musik");
+      }).catch(() => {
+        audioIcon.classList.add("audio-control__icon--pause");
+        audioIcon.classList.remove("audio-control__icon--disc");
+      });
+      window.setTimeout(() => {
+        cover.hidden = true;
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }, 500);
+    });
+
+    audioControl.addEventListener("click", () => {
+      if (invitationAudio.paused) {
+        invitationAudio.play().then(() => {
+          audioIcon.classList.add("audio-control__icon--disc");
+          audioIcon.classList.remove("audio-control__icon--pause");
+          audioControl.setAttribute("aria-label", "Jeda musik");
+        });
+      } else {
+        invitationAudio.pause();
+        audioIcon.classList.add("audio-control__icon--pause");
+        audioIcon.classList.remove("audio-control__icon--disc");
+        audioControl.setAttribute("aria-label", "Putar musik");
+      }
+    });
+
+    const lightbox = document.querySelector("#lightbox");
+    const lightboxImage = document.querySelector("#lightbox-image");
+    const lightboxCaption = document.querySelector("#lightbox-caption");
+    const lightboxImages = new Map();
+    let activeLightboxGroup = [];
+    let activeLightboxIndex = 0;
+
+    document.querySelectorAll(".lightbox-image").forEach((image) => {
+      const group = image.dataset.lightboxGroup;
+      const images = lightboxImages.get(group) || [];
+      images.push(image);
+      lightboxImages.set(group, images);
+      image.addEventListener("click", () => {
+        activeLightboxGroup = lightboxImages.get(group);
+        activeLightboxIndex = activeLightboxGroup.indexOf(image);
+        updateLightbox();
+        lightbox.hidden = false;
+        document.body.classList.add("lightbox-open");
+      });
+    });
+
+    const updateLightbox = () => {
+      const image = activeLightboxGroup[activeLightboxIndex];
+      lightboxImage.src = image.currentSrc || image.src;
+      lightboxImage.alt = image.alt;
+      lightboxCaption.textContent = image.alt;
+    };
+
+    const closeLightbox = () => {
+      lightbox.hidden = true;
+      document.body.classList.remove("lightbox-open");
+    };
+
+    document.querySelector("#lightbox-close").addEventListener("click", closeLightbox);
+    document.querySelector("#lightbox-previous").addEventListener("click", () => {
+      activeLightboxIndex = (activeLightboxIndex - 1 + activeLightboxGroup.length) % activeLightboxGroup.length;
+      updateLightbox();
+    });
+    document.querySelector("#lightbox-next").addEventListener("click", () => {
+      activeLightboxIndex = (activeLightboxIndex + 1) % activeLightboxGroup.length;
+      updateLightbox();
+    });
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (lightbox.hidden) {
+        return;
+      }
+      if (event.key === "Escape") {
+        closeLightbox();
+      } else if (event.key === "ArrowLeft") {
+        document.querySelector("#lightbox-previous").click();
+      } else if (event.key === "ArrowRight") {
+        document.querySelector("#lightbox-next").click();
+      }
+    });
+
+    const targetWeddingDate = new Date("2026-10-18T09:00:00");
+    const countdownDays = document.querySelector("#countdown-days");
+    const countdownHours = document.querySelector("#countdown-hours");
+    const countdownMinutes = document.querySelector("#countdown-minutes");
+
+    const updateCountdown = () => {
+      const now = new Date();
+      let difference = targetWeddingDate.getTime() - now.getTime();
+
+      if (difference <= 0) {
+        countdownDays.textContent = "00";
+        countdownHours.textContent = "00";
+        countdownMinutes.textContent = "00";
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      difference -= days * (1000 * 60 * 60 * 24);
+      const hours = Math.floor(difference / (1000 * 60 * 60));
+      difference -= hours * (1000 * 60 * 60);
+      const minutes = Math.floor(difference / (1000 * 60));
+
+      countdownDays.textContent = String(days).padStart(2, "0");
+      countdownHours.textContent = String(hours).padStart(2, "0");
+      countdownMinutes.textContent = String(minutes).padStart(2, "0");
+    };
+
+    updateCountdown();
+    window.setInterval(updateCountdown, 1000);
+
+    const closeNotification = () => {
+      notification.hidden = true;
+    };
+
+    notification.addEventListener("click", (event) => {
+      if (event.target === notification) {
+        closeNotification();
+      }
+    });
+    notification.querySelector(".form-notification__close").addEventListener("click", closeNotification);
+
+    attendanceForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const submitButton = attendanceForm.querySelector("button[type='submit']");
+      submitButton.disabled = true;
+      notificationText.textContent = "Mengirim konfirmasi...";
+      notification.hidden = false;
+
+      try {
+        const guestName = attendanceForm.elements.nama.value.trim();
+        const guestTarget = `${guestName} ${recipientGreeting}`.trim();
+
+        await fetch("https://script.google.com/macros/s/AKfycbzxOS5x_yEYDB7kEGayrNRz_eZMEGD6J_lmctIBhBB62EOIvudtrku3VTqKpfe8q330-A/exec", {
+          method: "POST",
+          mode: "no-cors",
+          body: new URLSearchParams({
+            nama: guestTarget,
+            jumlah: attendanceForm.elements.jumlah.value,
+            status: attendanceForm.elements.konfirmasi.value,
+            penerima: recipient
+          })
+        });
+        notificationText.textContent = "Konfirmasi berhasil dikirim";
+        attendanceForm.reset();
+      } catch (error) {
+        notificationText.textContent = "Konfirmasi gagal dikirim. Silakan coba lagi.";
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
